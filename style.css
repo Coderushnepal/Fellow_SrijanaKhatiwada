@@ -1,0 +1,9 @@
+.navbar{
+ background-color: rgb(0, 110, 255);
+ width: 1336px;
+ height: 100px;
+}
+li{
+ list-style: none;
+ display: inline;
+}
