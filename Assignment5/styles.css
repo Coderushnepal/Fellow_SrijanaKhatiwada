@@ -1,0 +1,189 @@
+body{
+	margin:0;
+	font-family: sans-serif;
+ background-color: #EE964B;
+ color: #ffffff;
+}
+
+*{
+	box-sizing: border-box;
+}
+
+.container{
+	max-width: 1140px;
+	background-color: #ffffff;
+	height:auto;
+	margin:40px auto;
+	padding:20px;
+}
+h1{
+	font-size:30px;
+	margin:0;
+}
+.clear{
+	clear: both;
+}
+nav{
+ float:left;
+ width: 100%;
+ background-color:#EF7B45; 
+ text-align: center;
+ padding:30px 15px;
+ margin-bottom:20px;
+}
+
+header{
+ float:left;
+ width: 100%;
+ background-color:#EF7B45; 
+ text-align: center;
+ padding:130px 15px;
+ margin-bottom:20px;
+}
+	
+button {
+
+margin-left: 70%;
+padding: 50px;
+position: fixed;
+
+}
+
+button a {
+font-size: 35px;
+text-decoration: none;
+color: black;
+}
+
+.lorem{ 
+font-size: 40px;
+}
+.section1{
+ float:left;
+ width: 100%;
+ background-color:#EF7B45; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:20px;
+}
+
+.section1 .content{
+	float:left;
+	width: 100%;
+	margin-top:60px;
+}
+
+.section1 .content .card{
+width:25%;
+float: left;
+padding:0px 10px;
+}
+
+.section1 .content .card .box{
+	background-color:#D84727;
+	font-size:30px;
+	color:#ffffff;
+	padding:60px 15px;
+}
+
+.section2{
+ float:left;
+ width: 100%;
+ background-color:#EF7B45; 
+ text-align: center;
+ padding:50px 10px;
+ margin-bottom:20px;
+}
+
+.section2 .content{
+float: left;
+width: 100%;
+margin-top:60px;
+}
+
+.section2 .content .left{
+	width: 50%;
+	float: left;
+	padding:0px 10px;
+
+}
+.section2 .content .left .card{
+	padding:200px 15px;
+	font-size:30px;
+	color:#ffffff;
+	background-color: #D84727;
+}
+.section2 .content .right{
+	width: 50%;
+	float: left;
+	padding: 0px 10px;
+}
+.section2 .content .right .card{
+	padding:48px 15px;
+	font-size:30px;
+	color:#ffffff;
+	background-color: #D84727;
+	margin-bottom:20px;
+}
+
+
+footer{
+ float:left;
+ width: 100%;
+ background-color:#D84727; 
+ text-align: center;
+ padding:50px 10px;
+ 
+}
+
+@media (max-width:900px) {
+	*{
+		font-family:cursive;
+		font-weight: bolder;
+
+	}
+
+	button {
+		background-color: crimson;
+	}
+
+	.section2 .content .right{
+		width: 70%;
+		float: left;
+		padding: 0px 10px;
+		margin-top: 20px;
+	}
+
+}
+
+@media (min-width:901px) {
+	.section2 .content .right{
+		width: 50%;
+		float: left;
+		padding: 0px 10px;
+	}
+
+	button {
+		position: sticky;
+		background-color: darkgoldenrod;
+	}
+footer{
+ float:left;
+ width: 100%;
+ background-color:#D84727; 
+ text-align: right;
+	padding:10px 10px;
+	font-style: italic;
+	font-weight: bolder;
+ 
+}
+
+p{
+	color: darkred;
+}
+body{
+	background-color: gray;
+}
+}
+
+
