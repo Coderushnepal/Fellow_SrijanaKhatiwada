@@ -18,7 +18,7 @@ nav {
 }
 
 .nav-logo {
-  margin: 7.7px 20px 0px 20px;
+  margin: 10px 20px 0px 20px;
   /* position: stic; */
   float: left;
 }
@@ -49,13 +49,20 @@ display: none;
   
   .nav-logo{
    margin-left: 150px;
+   margin-top: 17px;
   }
-
+.nav-options li a {
+  color: black;
+  font-size: large;
+}
  .login-button {
   display: block;
-  
+  margin-top: 3px;
   
  }
+ .nav-options li a:hover {
+    background-color: rgb(241, 240, 240);
+  }
  /* responsive nav bar */
  .login-button button {
   background: linear-gradient(90deg, #3AE4DF 0%, #7A88FF 104.29%);
