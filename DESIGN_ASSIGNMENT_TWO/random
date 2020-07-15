@@ -1,0 +1,51 @@
+/* header starts */
+.header-banner-section {
+    display: block;
+}
+
+.header-banner-section h1 {
+    color:#003CA6;
+    font-family: Arial;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    padding:18px;
+}
+.header-banner-section p {
+    width: 450px;
+    height: 17px;
+    /* left: 423px;
+    top: 718px; */
+    text-align: center;
+    padding-left: 55px;
+    font-family: Arciform Sans;
+    font-size: 15.5px;
+    line-height: 16px;
+    color: #6E3628;
+}
+.banner-img {
+    background-image: url(./images/topbanner.png);
+    background-size: contain;
+    /* width: 100%;*/
+    height: 380px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+
+}
+
+.google-playstore-btn,
+.appstore-btn {
+margin-left: 32.5%;
+margin-right: 32.5%;
+/* width: 32.5%;; */
+
+
+}
+/* .appstore-btn:hover,
+.google-playstore-btn:hover {
+    cursor: pointer;
+} */
+
+
+/* headeer ends */
