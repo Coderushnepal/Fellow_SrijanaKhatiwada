@@ -171,6 +171,16 @@ li:hover {
     background-repeat: no-repeat;
 
 }
+
+.banner-img h1{
+    display: none;
+   }
+   .banner-img p{
+       display: none;
+   }
+   .social-media-desktop{
+       display: none;
+   }
 .social-media {
     width: 35%;
     margin:auto;
@@ -184,76 +194,215 @@ text-align: center;
 margin-top: 20px; */
 margin: auto;
 
+
 }
 .facebook {
     color: blue;
-    padding-left: 50px;
+    /* padding-left: 50px; */
+    float: left;
+    padding: 20px;
+
    
 }
 .instagram {
     color: rgb(255, 66, 176);
     padding-right: 50px;
+    float: left;
+    padding: 20px;
    
 }
 .app-playstore-btn {
     margin: auto;
-    width: 80%;
+    width: 50%;
 }
-
-.app-playstore-btn .google-playstore-btn a img{
-      /* background-color: purple; */
-      /* width: 86%; */
-      margin-left: 30px;
-      float: left;
-      margin-bottom: 20px;
-      padding-left: 10px;
-   
-      
+.google-playstore-btn {
+    float: left;
+    margin: 20px;
+    /* width: 100%; */
+    /* padding: 30px; */
 }
-.app-playstore-btn .appstore-btn a img{
-/* background-color: red; */
-float: right;
-/* width: 86%; */
- margin-right: 30px;
-margin-bottom: 30px;
-margin-top: 4px; 
-margin-left: 10px;
-padding-right: 10px;
-/* margin: auto; */
-
-
+.appstore-btn {
+    float: right;
+    /* margin:20px; */
+    /* padding: 30px; */
 }
 
 .clear-header {
     clear: both;
 }
 
-@media screen and (min-width:1200px){
-    .app-playstore-btn .google-playstore-btn a img{
-        float: left;
-        width: 40%;
-        margin-left: 30px;
-        margin-bottom: 20px;
-        
-  }
-  .app-playstore-btn .appstore-btn a img{
-  
-  float: right;
-  width: 40%;
-  margin-right: 30px;
-  margin-bottom: 30px;
-  margin-top: 2px;
-  
-  
-  }
+@media screen and (min-width:768px){
 
+    .banner-img {
+        background-image: url(./images/topbanner.png);
+        background-size: cover;
+        background-position: center;
+        height: 510px;
+        margin-top: 20px;
+        margin-bottom: 5px;
+        background-repeat: no-repeat;
+    
+    }
 
 
 }
 
 
 
+@media screen and (min-width:1200px){
+    .header-banner-section h1 {
+        display: none;
+    }
+    .header-banner-section p {
+        display: none;
+    }
+    .banner-img {
+        background-image: url(./images/topbanner.png);
+        background-size: cover;
+        background-position: center;
+        height: 535px;
+        margin-top: 10px;
+        margin-bottom: 5px;
+        background-repeat: no-repeat;
+    
+    }
+.banner-img h1{
+ color:#003CA6;
+        font-family: Arial;
+        font-size: 38px;
+        line-height: 44px;
+        text-align: center;
+        /* padding:18px */
+        margin-left: 226;
+        margin-right: 226;
+        width: 749px;
+height: 44px;
+}
+.banner-img p{
+ text-align: center;
+        /* padding-left: 55px; */
+        font-family: Arciform Sans;
+        font-size: 16px;
+        line-height: 16px;
+        color: #6E3628;
+        padding: 20px;
+        margin-top:41px;
+        width: 595px;
+height: 17px;
+}
 
+    .social-media {
+       display: none;
+    }
+    .social-media-desktop {
+        display: block;
+        position: absolute;
+        float: right;
+        margin-top: 281px;
+        margin-bottom: 223px;
+        margin-left: 1100px;
+
+    }
+    
+
+    .banner-facebook,
+.banner-instagram {
+font-size: 40px;
+text-align: right;
+/* margin-bottom: 20px;
+margin-top: 20px; */
+margin: auto;
+
+
+}
+.banner-facebook {
+    color: blue;
+    /* padding-left: 50px; */
+    /* float: left; */
+    padding: 20px;
+
+   
+}
+.banner-instagram {
+    color: rgb(255, 66, 176);
+    /* padding-right: 50px; */
+    /* float: left; */
+    padding: 20px;
+   
+}
+
+
+}
 
 /* headeer ends */
 /* nav bar and header ends */
+
+
+/* car wash sectiom starts */
+
+.car-wash-section {
+    margin: auto;
+}
+.car-wash-section h2 {
+    font-size: 20px;
+    line-height: 37px;
+    color: #003CA6;
+    text-align: center;
+}
+.car-wash-bgimage {
+    background-image:url(./images/carwash.png);
+    height: 350px;
+    background-size: cover;
+    background-position: center;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-repeat: no-repeat;
+}
+.car-wash-details {
+    /* margin: auto; */
+
+    margin: 50px;
+    width: 100%;
+    height: auto;
+    background-color: red;
+}
+.car-wash-details .detail a img {
+    width:70px;
+    height:100px;
+}
+.car-wash-details .detail{
+   float: left;
+   width: 100px ;
+   height: 120px;
+   margin: 50px 60px 50px 60px;
+ 
+}
+
+.playstore-buttons-cw {
+    width: 40%;
+    margin: auto;
+}
+.btn {
+width: 100%;
+
+}
+.left-cw {
+    float: left;
+    
+}
+.right-cw {
+    float: right;
+    margin-left: 10px;
+
+}
+
+
+
+.clear-carwash {
+    clear:both;
+}
+
+
+/* car wash sectiom ends */
+
+/* bathtub section starts */
