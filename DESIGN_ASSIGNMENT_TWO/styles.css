@@ -211,6 +211,7 @@ margin: auto;
     padding: 20px;
    
 }
+
 .app-playstore-btn {
     margin: auto;
     width: 50%;
@@ -331,6 +332,21 @@ margin: auto;
    
 }
 
+.app-playstore-btn {
+    margin: auto;
+    width: 50%;
+}
+.google-playstore-btn {
+    float: left;
+    margin: 20px;
+    /* width: 100%; */
+    /* padding: 30px; */
+}
+.appstore-btn {
+    float: right;
+    /* margin:20px; */
+    /* padding: 30px; */
+}
 
 }
 
@@ -372,22 +388,22 @@ margin: auto;
 }
 .car-wash-details .detail{
    float: left;
-   width: 100px ;
+   width: 100px;
    height: 120px;
    margin: 50px 60px 50px 60px;
  
 }
 
 .playstore-buttons-cw {
+   
     width: 40%;
     margin: auto;
+    /* display: inline-block; */
 }
-.btn {
-width: 100%;
 
-}
 .left-cw {
     float: left;
+    
     
 }
 .right-cw {
@@ -396,8 +412,6 @@ width: 100%;
 
 }
 
-
-
 .clear-carwash {
     clear:both;
 }
@@ -405,4 +419,276 @@ width: 100%;
 
 /* car wash sectiom ends */
 
-/* bathtub section starts */
+/* BATHTUB SECTION STARTS */
+.our-services-section {
+    display: block;
+    margin: auto;
+}
+.mobile h2 {
+    font-family: Arial;
+font-size: 38px;
+line-height: 37px;
+  text-align: center;
+/* Blue */
+color: #003CA6;
+}
+.pool-tablet-phone {
+    display: none;
+}
+.left-table {
+    display: none;
+}
+
+.options {
+    
+    width: 95%;
+    height: 40px;
+    left: 122px;
+    top: 1930px;
+    
+    /* white-color */
+    background: #FFFFFF;
+    display: inline-block;
+    /* Blue */
+    border: 1px solid #003CA6;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 12px;
+}
+.options .autos {
+    float: left;
+    width: 50%
+    
+}
+.options .swimming-pool {
+float: right;
+    width: 50%;
+    border: 1px solid #003CA6;
+    box-sizing: border-box;
+    border-radius:5px;
+}
+.options .autos a p{
+    color: #003CA6;
+    text-align: center;
+    line-height: 35px;
+
+}
+.options .swimming-pool a p {
+color: white;
+text-align: center;
+background-color: #003CA6;;
+line-height: 35px;
+    padding:1px 0 1px 0;
+}
+.pool-bgimg {
+    background-image: url(./images/swimmingpool-mobile.png);
+    width: 100%;
+    height: 450px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.services-menu {
+    display: block;
+    margin: auto;
+}
+ .pool-icon{
+    float: right;
+    margin-bottom: 30px;
+}
+.pool-icon img{
+    width: 65px;
+    height: 48px;
+    margin: 10px;
+}
+.table1 {
+    font-family: Arciform Sans;
+font-size: 16px;
+line-height: 16px;
+
+/* Blue */
+/* color: #003CA6; */
+    border-color:white;
+    /* border-collapse: none; */
+    width: 95%;
+    margin: 10px;
+  }
+  
+  td, th {
+    /* border: 1px solid #dddddd; */
+    text-align: left;
+    padding: 8px;
+  }
+ .menu-detail {
+    font-size: 16px;
+    line-height: 16px;
+    
+    /* Blue */
+    color: #003CA6;
+ }
+
+.price {
+    font-size: 25px;
+line-height: 37px;
+
+/* identical to box height */
+
+/* RED */
+color: #E1251D;
+}
+.clear-bathing-sec {
+    clear: both;
+}
+
+.table2 {
+    background-color: #003CA6;
+    border-radius: 16px;
+    margin-left: 10px;
+    margin-right: 13px;
+    margin-bottom: 20px;
+}
+.table2 .total-menu{
+    width: 40%;
+}
+.table2 .total-menu,
+.table2 .price {
+    color: white;
+}
+.partners-desktop {
+    display: none;
+}
+.partners {
+    display: inline-block;
+    text-align: center;
+    width: 100%;
+}
+.partner-details {
+    color: #003CA6;
+    font-size: 12px;
+line-height: 12px;
+
+}
+@media screen and (min-width:1200px) {
+    .pool-bgimg {
+        background-image: url(./images/swimmingpool.png);
+        width: 100%;
+        height: 450px;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .pool-tablet-phone {
+        display: block;
+
+    }
+    .pool-tablet-phone h2{
+        font-family: Arial;
+        font-size: 32px;
+        line-height: 37px;
+          text-align: center;
+        /* Blue */
+        color: #003CA6;
+
+    }
+    
+  
+    .mobile-h2 {
+        display: none;
+    }
+    .options {
+        display: none;
+    }
+    .left-table {
+        display: block;
+        float: left;
+        width: 50%;
+        margin-top: 40px;
+    }
+    .table-mobile {
+        display: none;
+    }
+    
+    .mobile h2 {
+        font-family: Arial;
+    font-size: 32px;
+    line-height: 37px;
+      text-align: left;
+    margin-left: 122px;
+    color: #003CA6;
+    /* float: left; */
+    margin-bottom: 30px;
+    }
+    .options-desktop {
+    
+        width: 25%;
+        height: 40px;
+        margin-left: 122px;
+        /* top: 1930px; */
+        
+        
+        /* white-color */
+        background: #FFFFFF;
+        display: inline-block;
+        /* Blue */
+        border: 1px solid #003CA6;
+        box-sizing: border-box;
+        border-radius: 8px;
+        /* margin: 12px; */
+    }
+    .options-desktop .autos {
+        float: left;
+        width: 40%
+        
+    }
+    .options-desktop .swimming-pool {
+    float: right;
+        width: 50%;
+        border: 1px solid #003CA6;
+        box-sizing: border-box;
+        border-radius:5px;
+    }
+    .options-desktop .autos a p{
+        color: #003CA6;
+        text-align: center;
+        padding-left: 30px;
+        line-height: 35px;
+    
+    }
+    .options-desktop .swimming-pool a p {
+    color: white;
+    text-align: center;
+    background-color: #003CA6;;
+    line-height: 35px;
+        padding:1px 0 1px 0;
+    }
+    
+    .partners-desktop {
+        display: block;
+        /* float:right; */
+        margin-top: 220px;
+
+    }
+    .partners-desktop .partner1 {
+   float: left;
+   margin-top: 90px;
+   margin-left: 10px;
+   
+    }
+    .partners-desktop .partner2 {
+        float: left;
+        margin-top: 80px;
+        margin-left: 10px;
+
+        
+    }
+    .partners-desktop .partner-details {
+        float: left;
+        /* margin-top: 140px; */
+        margin-right:185px;
+     }
+} 
+
+/* BATHTUB SECTION ENDS */
