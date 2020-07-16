@@ -692,3 +692,29 @@ line-height: 12px;
 } 
 
 /* BATHTUB SECTION ENDS */
+
+ /* EXPERIENCE SECTION  */
+ .experience h3{
+     font-family: Arial;
+     font-style: normal;
+     font-weight: bold;
+     font-size: 32px;
+     line-height: 35px;
+     color: #003CA6;
+     text-align: center;
+
+ }
+ .experience-playstore-btn {
+     margin-left: auto;
+     margin-right: auto;
+     margin-top: -20px;
+ }
+ 
+ /* EXPERIENCE SECTION ENDS   */
+
+ /* QUESTION ANSWER SECTIONS */
+
+
+
+
+ /* QUESTION ANSWER SECTIONS ENDS*/
