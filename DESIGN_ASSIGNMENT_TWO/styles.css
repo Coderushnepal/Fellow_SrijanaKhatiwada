@@ -181,13 +181,18 @@ li:hover {
    .social-media-desktop{
        display: none;
    }
-.social-media {
+/* .social-media {
     width: 35%;
     margin:auto;
     
+} */
+.social-media-phone {
+    margin-left: auto;
+    margin-right: auto;
+
 }
-.facebook,
-.instagram {
+.fa-facebook,
+.fa-instagram {
 font-size: 40px;
 text-align: center;
 /* margin-bottom: 20px;
@@ -196,7 +201,7 @@ margin: auto;
 
 
 }
-.facebook {
+.fa-facebook {
     color: blue;
     /* padding-left: 50px; */
     float: left;
@@ -204,7 +209,7 @@ margin: auto;
 
    
 }
-.instagram {
+.fa-instagram {
     color: rgb(255, 66, 176);
     padding-right: 50px;
     float: left;
@@ -212,21 +217,12 @@ margin: auto;
    
 }
 
-.app-playstore-btn {
-    margin: auto;
-    width: 50%;
+.header-playstore-btn {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:10px;
 }
-.google-playstore-btn {
-    float: left;
-    margin: 20px;
-    /* width: 100%; */
-    /* padding: 30px; */
-}
-.appstore-btn {
-    float: right;
-    /* margin:20px; */
-    /* padding: 30px; */
-}
+
 
 .clear-header {
     clear: both;
