@@ -7,7 +7,9 @@
 }
 body {
     font-family: sans-serif;
-    
+    /* overflow: hidden;
+    height: 100vh; */
+    margin: auto;
 }
 
 /* nav bar and header */
@@ -824,7 +826,7 @@ color: #131212;
 .dropdown-qna:hover {
     display: block;
     font-size: larger;
-    width: 50%;
+    /* width: 50%; */
 
 }
 
@@ -857,33 +859,132 @@ color: #131212;
 
  /* FOOTER  */
 footer {
-    background-color: #003CA6;;
+    background-color: #003CA6;
+    /* z-index: 1; */
+    width: 100%;
+    height: auto;
+
 }
 .footer-left {
+    display: block;
     float: left;
     color:white;
+    width: 100%;
+    margin-left: 10px;
+    text-align: center;
 }
 .footer-left h4 {
-    font-size: 22px;
-line-height: 22px;
+    font-size: 18px;
+line-height: 18px;
+/* margin-top: -150px; */
+/* width: 50%; */
+margin-top: 20px;
+/* margin-left: 10px; */
+}
+.footer-left a {
+font-size:15px ;
+line-height: 15px;
+color: white;
+/* margin-left: 10px; */
 }
 .footer-right {
     float: right;
+    margin-left: auto;
+    margin-right: auto;
 }
-
+.footer-playstore {
+    width: 100%;
+    padding: 10px;
+    overflow-x: auto;
+    
+}
 .mobile-background-img1 {
-    background-image: url(./images/wash\ splash.png),url(./images/mobilebg2.png),url(./images/mobilebg.png);
-  background-position: right bottom,left top, right top;
-  background-repeat: no-repeat, no-repeat,no-repeat;
-    width: 400px;
-    height: 200px;
-    float: right;
-    opacity: 0.5,0.5,0.5;
-
+    display: none;
 }
-
 
 .clear-footer {
     clear: both;
 }
+
+@media screen and (min-width: 768px) {
+    .mobile-background-img1 {
+        background-image: url(./images/wash\ splash.png),url(./images/mobilebg2.png), url(./images/mobilebg.png);
+      background-position: left bottom,left top, right top;
+      background-repeat: no-repeat, no-repeat,no-repeat;
+        width: 45%;
+        height: 200px;
+        margin-left: 953px;
+        margin-right: 10px;
+        float: right; 
+        opacity: 0.1,0.1,0.1; 
+        display: block;
+        /* margin-top: -100px; */
+
+}
+
+.footer-left {
+    display: block;
+    float: left;
+    color:white;
+    width: 40%;
+    margin-left: 10px;
+    text-align: left;
+    margin-top: -100px;
+
+}
+
+.footer-right {
+    float: right ;
+}
+.footer-playstore {
+    width: 90%;
+    padding: 10px;
+    overflow-x: auto;
+    
+}
+#appstr {
+    margin-right: 25px;
+     
+}
+}
+
+@media screen and (min-width: 1200px) {
+    .mobile-background-img1 {
+        background-image: url(./images/wash\ splash.png),url(./images/mobilebg2.png), url(./images/mobilebg.png);
+      background-position: left bottom,left top, right top;
+      background-repeat: no-repeat, no-repeat,no-repeat;
+        width: 43%;
+        height: 200px;
+        /* margin-left: 953px; */
+        margin-right: 10px;
+        float: right; 
+        opacity: 0.1,0.1,0.1; 
+        display: block;
+        /* margin-top: -100px; */
+
+}
+
+.footer-left {
+    display: block;
+    float: left;
+    color:white;
+    width: 45%;
+    margin-left: 122px;
+    text-align: left;
+    margin-top: -100px;
+
+}
+
+.footer-right {
+    float: right ;
+}
+.footer-playstore {
+    width: 50%;
+    padding: 10px;
+    overflow-x: auto;
+    margin-right: 90px;
+    
+}
+}
+
   /* FOOTER  ENDS*/
