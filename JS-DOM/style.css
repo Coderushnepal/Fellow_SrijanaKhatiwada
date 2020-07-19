@@ -3,8 +3,20 @@
 } */
 
 /* random number */
+* {
+  margin: 0;
+  padding: 0;
+}
 .circle {
-    background-color: blueviolet;
-    width: 10px;
-    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin: 5px;
+  border-radius: 50%;
+  position: absolute;
+  background-color: rgb(69, 81, 151);
+}
+.frame {
+  height: 95vh;
+  margin-top: 10px;
+  border: 2px solid black;
 }
