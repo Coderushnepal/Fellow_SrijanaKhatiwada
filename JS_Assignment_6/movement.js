@@ -21,21 +21,21 @@ function Main() {
                         currentBall.direction();
                     };
                 })(),
-                timeout
+                
             );
         }
     };
 
-    this.removeBall = function() {
-        setInterval(function(){
-            ballons.map(function(ball){
-                // console.log(ball);
-                if (ball.getCoordinates().y > 0) {
-                    ball.remove();
-                }
-            });
-        });
-    }
+    // this.removeBall = function() {
+    //     setInterval(function(){
+    //         ballons.map(function(ball){
+    //             // console.log(ball);
+    //             if (ball.getCoordinates().y > 0) {
+    //                 ball.remove();
+    //             }
+    //         });
+    //     });
+    // }
 }
 
 var main = new Main();

@@ -42,7 +42,7 @@ this.deleteBalls = function(){
 
 setInterval(function () {
     var currentTop = that.ball.style.top;
-var newTop = parseInt(currentTop) + 10 ;
+    var newTop = parseInt(currentTop) + 0.5 * 5 ;
 that.ball.style.top = newTop + "px";
 var clientHeight = box.clientHeight;
 // if (newTop >= (clientHeight-20) || (newTop) <= 0 ){
