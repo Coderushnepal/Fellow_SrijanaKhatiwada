@@ -1,4 +1,4 @@
-var btnSubmit = document.getElementById("submitBtn");
+var btn = document.getElementById("submitBtn");
 var username = document.getElementById("userName");
 var email = document.getElementById("email");
 var password = document.getElementById("password");
@@ -17,7 +17,7 @@ btnSubmit.addEventListener('click', function(a) {
 	const confmpwValue = confmpw.value.trim();
 
     
-		if(usernameValue === '' || usernameValue.length < 3) 
+	if(usernameValue === '' || usernameValue.length < 3) 
 		{
 			username.style.border = "1px solid red";				  
 			errorUsername.style.visibility = "visible";	
