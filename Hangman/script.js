@@ -19,14 +19,47 @@ heading.appendChild(instructions);
 // var linebreak = document.createElement('br');
 // instructions.appendChild(linebreak);
 
-
+// dashes container
 var dashDiv = document.createElement('div');
 dashDiv.classList.add('dashDiv');
 wholeContainer.appendChild(dashDiv);
 
-var hints = ['Movie', 'Nepali actor', 'Diffucult PL', 'Food'];
+
+
+var hints = ['Movie', 'Nepali actor', 'Difficult PL', 'Food'];
 var answers = ['lucy', 'rajeshhamal', 'javascript' , 'chicken'];
 // var answers = [['l', 'u', 'c', 'y'],['r', 'a', 'j', 'e', 's','h', 'h', 'a', 'm', 'a', 'l' ], ['j', 'a', 'v','a','s','c','r','i' , 'p' , 't'], ['c', 'h', 'i', 'c', 'k', 'e', 'n' ] ];
+
+
+
+
+// wrong letters displayer
+var wrongDiv = document.createElement('div');
+wrongDiv.classList.add('wrongDiv');
+wholeContainer.appendChild(wrongDiv);
+var wrongTitle = document.createElement('h2');
+wrongTitle.classList.add('wrongTitle');
+wrongTitle.innerHTML = 'Wrong Letters';
+wrongTitle.style.color = 'white';
+wrongTitle.style.fontWeight= 'bold';
+wrongDiv.appendChild(wrongTitle);
+
+// array to push wrong letters
+var wrongLetters= [];
+var wrongLetterSpan = document.createElement('span');
+wrongLetterSpan.classList.add('wrongLetterSpan');
+wrongDiv.appendChild(wrongLetterSpan);
+document.querySelectorAll('.wrongLetterSpan').innerHTML = wrongLetters;
+
+
+
+
+// var wrongLettersDiv = document.createElement('div');
+// var wrongLetters =[];
+// wrongLettersDiv = wrongLetters;
+// wrongTitle.appendChild('wrongLettersDiv');
+
+
 
 var randomAns = '';
 var randomAns= answers[Math.floor(Math.random()*answers.length)];
@@ -47,7 +80,10 @@ for (var j=0 ;j < randomAns.length; j++) {
         
     }
     else {
-        
+        wrongLetters.push(e.key);
+    
+
+
     }
    
 }

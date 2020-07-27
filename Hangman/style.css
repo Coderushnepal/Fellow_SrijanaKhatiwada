@@ -15,7 +15,7 @@ padding: 20px 30px;
 position: relative;
 margin: auto;
 height: 350px;
-width: 450px;
+width: 750px;
 }
 
 .figure-container {
@@ -38,6 +38,13 @@ visibility: hidden;
   color: white;
   
 }
+.wrongTitle {
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  text-align: center;
+  color: white;
+}
 .wholeContainer {
   text-align: center;
 }
@@ -47,12 +54,14 @@ visibility: hidden;
   margin-left: 20px;
   font-size: 40px;
   width: 25px;
- 
-  /* border-bottom: 4px solid rgb(252, 227, 227); */
-
 }
-/* .letterDash {
+.wrongLetterDiv {
+  display: block;
+  width: 30px;
+  margin-left: 20px;
+  position: absolute;
+}
+.wrongTitle {
+  position: relative;
   
-  display: inline-block;
-  margin-left: 5px;
-} */
+}
