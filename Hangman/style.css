@@ -63,5 +63,14 @@ visibility: hidden;
 }
 .wrongTitle {
   position: relative;
+  text-align: center;
   
+}
+.wrongLetterSpan {
+  font-size: 30px;
+  /* position: absolute; */
+  /* margin-left: 100px; */
+  font-weight: bold;
+  letter-spacing: 25px;
+  text-align: center;
 }

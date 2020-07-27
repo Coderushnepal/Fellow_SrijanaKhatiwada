@@ -44,22 +44,6 @@ wrongTitle.style.color = 'white';
 wrongTitle.style.fontWeight= 'bold';
 wrongDiv.appendChild(wrongTitle);
 
-// array to push wrong letters
-var wrongLetters= [];
-var wrongLetterSpan = document.createElement('span');
-wrongLetterSpan.classList.add('wrongLetterSpan');
-wrongDiv.appendChild(wrongLetterSpan);
-document.querySelectorAll('.wrongLetterSpan').innerHTML = wrongLetters;
-
-
-
-
-// var wrongLettersDiv = document.createElement('div');
-// var wrongLetters =[];
-// wrongLettersDiv = wrongLetters;
-// wrongTitle.appendChild('wrongLettersDiv');
-
-
 
 var randomAns = '';
 var randomAns= answers[Math.floor(Math.random()*answers.length)];
@@ -73,19 +57,20 @@ for (var i = 0; i<randomAns.length; i++) {
 }
 
 var letters = document.querySelectorAll('.letterDash');
+
 document.addEventListener("keydown", function (e) {
-for (var j=0 ;j < randomAns.length; j++) {
-    if (randomAns[j]=== e.key) {
-        letters[j].innerHTML  = e.key;
-        
-    }
-    else {
-        wrongLetters.push(e.key);
+    if (randomAns.includes(e.key)) {
+      for (var j = 0; j < randomAns.length; j++) {
+        if (randomAns[j] === e.key) {
+          letters[j].innerHTML = e.key;
+        }
+      }
+    } else {
     
-
+var wrongLetterSpan = document.createElement('span');
+wrongLetterSpan.classList.add('wrongLetterSpan')
+wrongLetterSpan.innerHTML = e.key;
+wrongDiv.appendChild(wrongLetterSpan);
 
     }
-   
-}
-
-});
+  });
