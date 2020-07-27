@@ -25,14 +25,31 @@ dashDiv.classList.add('dashDiv');
 wholeContainer.appendChild(dashDiv);
 
 var hints = ['Movie', 'Nepali actor', 'Diffucult PL', 'Food'];
-var answers = ['lucy', 'rajeshhamal', 'javascript', 'chicken'];
+var answers = ['lucy', 'rajeshhamal', 'javascript' , 'chicken'];
+// var answers = [['l', 'u', 'c', 'y'],['r', 'a', 'j', 'e', 's','h', 'h', 'a', 'm', 'a', 'l' ], ['j', 'a', 'v','a','s','c','r','i' , 'p' , 't'], ['c', 'h', 'i', 'c', 'k', 'e', 'n' ] ];
 
-var randomAns = 0;
+var randomAns = '';
 var randomAns= answers[Math.floor(Math.random()*answers.length)];
 
 for (var i = 0; i<randomAns.length; i++) {
     var letterDash = document.createElement('div');
     letterDash.classList.add('letterDash');
-    letterDash.innerHTML= '_';
+    letterDash.style.borderBottom = ('4px solid rgb(252, 227, 227)');
+    
     dashDiv.appendChild(letterDash);
 }
+
+var letters = document.querySelectorAll('.letterDash');
+document.addEventListener("keydown", function (e) {
+for (var j=0 ;j < randomAns.length; j++) {
+    if (randomAns[j]=== e.key) {
+        letters[j].innerHTML  = e.key;
+        
+    }
+    else {
+        
+    }
+   
+}
+
+});
