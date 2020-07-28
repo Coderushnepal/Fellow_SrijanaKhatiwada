@@ -27,7 +27,7 @@ stroke-linecap: round;
 margin-top: 100px;
 }
 .figure-part {
-visibility: hidden;
+display: none;
 }
 
 .heading {

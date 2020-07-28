@@ -56,6 +56,15 @@ for (var i = 0; i<randomAns.length; i++) {
     dashDiv.appendChild(letterDash);
 }
 
+// function to display parts
+var counter = 0;
+var displayParts = document.querySelectorAll(".figure-part");
+function displayFigureParts() {
+  var part = Array.from(displayParts);
+  part[counter].style.display = "block";
+  counter++;
+}
+
 var letters = document.querySelectorAll('.letterDash');
 
 document.addEventListener("keydown", function (e) {
@@ -66,11 +75,11 @@ document.addEventListener("keydown", function (e) {
         }
       }
     } else {
-    
+      displayFigureParts();
 var wrongLetterSpan = document.createElement('span');
 wrongLetterSpan.classList.add('wrongLetterSpan')
-wrongLetterSpan.innerHTML = e.key;
+wrongLetterSpan.innerHTML = e.key ;
 wrongDiv.appendChild(wrongLetterSpan);
+}
+});
 
-    }
-  });
