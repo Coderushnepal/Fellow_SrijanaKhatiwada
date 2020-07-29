@@ -74,3 +74,32 @@ display: none;
   letter-spacing: 25px;
   text-align: center;
 }
+
+#winDiv {
+  width: 16%;
+  background-color: rgb(128, 66, 66);
+  display: none;
+  margin-left: 550px;
+}
+.lossMessage {
+  color: white;
+  padding: 5px;
+  display: none;
+  text-align: center;
+}
+.winMessage {
+  color: black;
+  padding: white;
+  display: none;
+  text-align: center;
+}
+#lossDiv {
+  width: 12%;
+  background-color: rgb(128, 66, 66);
+  margin-left: 550px;
+  display: none;
+}
+
+.popUpMessage {
+  display: none;
+}

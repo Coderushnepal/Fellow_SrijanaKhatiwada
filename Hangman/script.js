@@ -24,13 +24,27 @@ var dashDiv = document.createElement('div');
 dashDiv.classList.add('dashDiv');
 wholeContainer.appendChild(dashDiv);
 
+// for win result
+var winResult= document.createElement('div');
+winResult.id = "winResult";
+wholeContainer.appendChild(winResult);
+var winMessage = document.createElement('div');
+winMessage.classList.add('winMessage');
+winMessage.innerHTML="YOU WIN";
+winResult.appendChild(winMessage);
+
+// for loss result
+var lossResult= document.createElement('div');
+lossResult.id = ('lossResult');
+wholeContainer.appendChild(lossResult);
+lossMessage = document.createElement('div');
+lossMessage.classList.add('lossMessage');
+lossMessage.innerHTML = "SORRY YOU LOST";
+lossResult.appendChild(lossMessage);
 
 
 var hints = ['Movie', 'Nepali actor', 'Difficult PL', 'Food'];
 var answers = ['lucy', 'rajeshhamal', 'javascript' , 'chicken'];
-// var answers = [['l', 'u', 'c', 'y'],['r', 'a', 'j', 'e', 's','h', 'h', 'a', 'm', 'a', 'l' ], ['j', 'a', 'v','a','s','c','r','i' , 'p' , 't'], ['c', 'h', 'i', 'c', 'k', 'e', 'n' ] ];
-
-
 
 
 // wrong letters displayer
@@ -65,21 +79,61 @@ function displayFigureParts() {
   counter++;
 }
 
+// for pop-up message 
+var popUp= document.createElement('div');
+popUp.classList.add('popUp');
+wholeContainer.appendChild(popUp);
+var popUpMessage = document.createElement('h3');
+popUpMessage.classList.add('popUpMessage');
+popUpMessage.innerHTML = "YOU HAVE ALREADY GUESSED THIS LETTER";
+popUp.appendChild(popUpMessage);
+
+var pressedKeys = []; //to store pressed key values
+var correctLetters = [];
+var wrongLetters = [];
 var letters = document.querySelectorAll('.letterDash');
 
 document.addEventListener("keydown", function (e) {
     if (randomAns.includes(e.key)) {
+      if(correctLetters.includes(e.key)){
+          popUp.style.display = 'inline-block';
+          setTimeout(()=> {
+            popUp.style.display = 'none';
+          },2000);
+      }
       for (var j = 0; j < randomAns.length; j++) {
         if (randomAns[j] === e.key) {
           letters[j].innerHTML = e.key;
+          correctLetters.push(e.key);
+
+          if (correctLetters.length === randomAns.length){
+            var winDiv = this.getElementById('winResult');
+            winDiv.style.display= "inline-block";
         }
       }
-    } else {
-      displayFigureParts();
-var wrongLetterSpan = document.createElement('span');
-wrongLetterSpan.classList.add('wrongLetterSpan')
-wrongLetterSpan.innerHTML = e.key ;
-wrongDiv.appendChild(wrongLetterSpan);
-}
-});
+    }
+   }
+    else {
+    displayFigureParts();
+    var wrongLetterSpan = document.createElement('span');
+    wrongLetterSpan.classList.add('wrongLetterSpan')
+    wrongLetterSpan.innerHTML = e.key ;
+    wrongDiv.appendChild(wrongLetterSpan);
+   if (!wrongLetters.includes(e.key)){
+      wrongLetters.push(e.key);
 
+   } 
+   else {
+       popUp.style.display = 'inline-block';
+   setTimeout(()=> {
+     popUp.style.display = 'none';
+   },2000);
+   }
+   if (wrongLetters.length=== 6 ){
+     var lossDiv = this.getElementsByClassId('lossResult');
+     lossDiv.style.display = 'inline=block';
+   }
+
+ 
+  }
+});
